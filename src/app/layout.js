@@ -17,12 +17,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-500`}
       >
-        {children}
+        <div className="flex flex-col min-h-screen overflow-hidden">
+            {children}
+        </div>
       </body>
     </html>
   );

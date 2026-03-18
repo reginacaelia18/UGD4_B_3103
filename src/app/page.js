@@ -130,11 +130,11 @@ export default function Home() {
   };
   
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start bg-[#16112f] bg-gradient-to-b from-[#181236] to-[#120d26] p-6 pt-10 font-sans text-white">
+    <div className="min-h-screen flex flex-col items-center justify-start bg-[#16112f] bg-linear-to-b from-[#181236] to-[#120d26] p-6 pt-10 font-sans text-white">
       
       <h1 className="text-[2.5rem] font-extrabold mb-8 drop-shadow-lg flex items-center gap-3 cursor-default hover:scale-105 transition-transform duration-300">
         <GiCardJoker className="text-yellow-400 animate-pulse" />
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-100 via-pink-200 to-purple-200 tracking-wide hover:drop-shadow-[0_0_15px_rgba(236,72,153,0.6)] transition-all duration-300">
+        <span className="bg-clip-text text-transparent bg-linear-to-r from-orange-100 via-pink-200 to-purple-200 tracking-wide hover:drop-shadow-[0_0_15px_rgba(236,72,153,0.6)] transition-all duration-300">
           Memory Card
         </span>
       </h1>
@@ -214,7 +214,7 @@ export default function Home() {
         <FaUndoAlt /> Main Lagi
       </button>
 
-      <div className="bg-[#1f163b]/80 border border-white/5 p-6 rounded-[2rem] shadow-[0_0_40px_rgba(139,92,246,0.1)]">
+      <div className="bg-[#1f163b]/80 border border-white/5 p-6 rounded-4xl shadow-[0_0_40px_rgba(139,92,246,0.1)]">
         <GameBoard
           cards={cards}
           flippedCards={flippedCards}

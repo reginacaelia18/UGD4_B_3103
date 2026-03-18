@@ -47,7 +47,7 @@ const createCards = (pairCount) => {
 };
 
 export default function Home() {
-  const [difficulty, setDifficulty] = useState('Hard');
+  const [difficulty, setDifficulty] = useState('Easy');
   
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
@@ -59,9 +59,9 @@ export default function Home() {
   const [isGameWon, setIsGameWon] = useState(false);
 
   const getPairCount = (level) => {
-    if (level === 'Easy') return 4;
+    if (level === 'Hard') return 8;
     if (level === 'Medium') return 6;
-    return 8; 
+    return 4; 
   };
 
   useEffect(() => {
